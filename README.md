@@ -62,7 +62,7 @@
 
 ![Dashboard – Pricing](lookerstudio/screenshot-pricing.png)
 
-## 🧩 Contenu & rating
+## 🧩 Contenu
 - Indices de contenu (proportions) :  
   **Sang 0,28** (≈ **28 %**) · **Violence 0,27** (≈ **27 %**) ·  
   **Alcool ~0,05** · **Sexe ~0,05** · **Drogue ~0,05** · **Humour ~0,05** (≈ **5 %** chacun).  
