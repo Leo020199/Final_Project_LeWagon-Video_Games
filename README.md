@@ -75,7 +75,7 @@ Ces valeurs servent à **anticiper la classification** (PEGI/ESRB) et la **cible
 - **Genres** : **Aventure/RPG/Shooter** (Aventure le plus référencé ; RPG = pricing plus élevé ; Shooter le plus apprécié).  
 - **Mode** : **Multijoueur** prioritaire (57,1 % des titres ; 67,2 % du CA dans l’échantillon).  
 - **Localisation** : cibler **Europe** (RU/DE/RU/ES/FR) & **Amérique** (US/CA/BR/AR) ; **6 langues** (DE, RU, ES, FR, EN, PT).  
-- **Prix** : **64,99 €** (cohérent avec PS ~65 € ; alignement possible sur Steam via bundle/DLC).
+- **Prix** : **64,99 €**
 
 
 ## 📊 KPI de suivi (dans le dashboard)
