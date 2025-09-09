@@ -24,13 +24,13 @@
   1994 **PlayStation (PS1) 102 M** · 2000 **PS2 155 M** · 2004 **Nintendo DS 154 M** ·  
   2005–2006 **guerre des consoles** · 2013 **PS4 117 M** · 2017 **Switch 127 M** · 2020 **PS5 20 M**.
 
+[Dashboard – Overview](lookerstudio/screenshot-overview.png)
 
 ## 🏷️ Genres (analyse échantillon)
 - **Genre le plus référencé** : **Aventure** (sur PlayStation, Steam/PC, Xbox).
 - **Moyennes de joueurs par genre** : calculées **sur l’ensemble** des jeux et **sur un top 1000** par genre (métriques visibles dans le dashboard).
 - **Genres retenus** : **Aventure**, **RPG**, **Shooter**.
 
----
 
 ## 🌍 Localisation (échantillon achats ≈ 15 667 000)
 - **Répartition par région (3 genres : Aventure, RPG, Shooter)** :  
@@ -39,7 +39,7 @@
   **Europe** (Royaume-Uni, Allemagne, Russie, Espagne, France) · **Amérique** (États-Unis, Canada, Brésil, Argentine).
 - **Langues prévues** : **6** — allemand, russe, espagnol, français, anglais, portugais.
 
----
+[Dashboard – localisation](lookerstudio/screenshot-localisation.png)
 
 ## 💶 Pricing & monétisation (2003–2024)
 **Périmètre** : Top 100 et **Top 30** des meilleurs jeux **PlayStation** & **Steam** (objectif : **s’inscrire dans le Top 30**).
@@ -57,6 +57,7 @@
 **Positionnement prix Piu Piu** : **64,99 €**  
 **Plateformes ciblées** : **Steam** (lancement) **+ portage PlayStation**.
 
+[Dashboard – pricing](lookerstudio/screenshot-pricing.png)
 
 ## 🧩 Contenu & rating
 - Indices de contenu (proportions) :  
@@ -64,6 +65,7 @@
   **Alcool ~0,05** · **Sexe ~0,05** · **Drogue ~0,05** · **Humour ~0,05** (≈ **5 %** chacun).  
 Ces valeurs servent à **anticiper la classification** (PEGI/ESRB) et la **cible marketing**.
 
+[Dashboard – contenu](lookerstudio/screenshot-contenu.png)
 
 ## 🧠 Synthèse “sweet spot” (décisions)
 - **Plateformes** : **Steam** pour l’accès/itération + **portage PlayStation** pour capter la base premium (différentiel prix).  
