@@ -1,9 +1,187 @@
-<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Piu Piu — Dashboard</title>
-<style>body{font-family:system-ui;margin:0;background:#0f1420;color:#eaeef3}
-.header{padding:36px 20px;text-align:center} .wrap{position:relative;padding-bottom:62%;height:0}
-.wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}</style>
-<div class="header"><h1>Piu Piu — Analyse de marché du jeu vidéo</h1></div>
-<div class="wrap">
-  <iframe src="https://lookerstudio.google.com/embed/reporting/64f4f0d0-0df3-46b7-8be9-b57a98db3213/page/p_x405yj6vvd" allowfullscreen></iframe>
-</div>
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Piu Piu — Analyse de marché du jeu vidéo</title>
+  <meta name="description" content="Portfolio · Piu Piu — Étude de marché jeux vidéo : plateforme × genre × localisation × monétisation · Dashboard Looker Studio + code Python/SQL.">
+  <style>
+    :root{--pad:20px;--max:1080px}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6;background:#0f1420;color:#eaeef3}
+    a{color:#a8c7ff;text-decoration:none}
+    header{padding:36px var(--pad);border-bottom:1px solid #1b2130;background:#0f1420;position:sticky;top:0;z-index:10}
+    .container{max-width:var(--max);margin:0 auto}
+    .title{margin:0 0 8px;font-size:1.8rem}
+    .lead{margin:0;color:#c9d7ff}
+    .btns{margin-top:16px;display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:10px 14px;border:1px solid #2b3246;border-radius:10px;background:#12192a;color:#eaeef3}
+    .btn.primary{background:#eaeef3;color:#0f1420;border-color:#eaeef3;font-weight:600}
+    section{padding:36px var(--pad)}
+    h2{margin:0 0 12px;font-size:1.4rem}
+    h3{margin:24px 0 8px}
+    .card{border:1px solid #1b2130;border-radius:14px;padding:18px;background:#0f1420}
+    .muted{color:#a3adbf}
+    ul{padding-left:18px;margin:10px 0}
+    li{margin:6px 0}
+    .grid{display:grid;gap:18px}
+    @media(min-width:900px){.grid-2{grid-template-columns:1fr 1fr}}
+    .iframe-wrap{position:relative;width:100%;height:0;padding-bottom:62%;border:1px solid #1b2130;border-radius:14px;overflow:hidden;background:#0b1120}
+    .iframe-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+    footer{padding:28px var(--pad);border-top:1px solid #1b2130;color:#a3adbf}
+    .tag{display:inline-block;font-size:.8rem;padding:2px 8px;border:1px solid #2b3246;border-radius:999px;margin-right:6px;color:#c9d7ff}
+    .kbd{font-family:ui-monospace,Menlo,Consolas,monospace;background:#0b1120;border:1px solid #1b2130;border-radius:6px;padding:2px 6px}
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <h1 class="title">Piu Piu — Analyse de marché du jeu vidéo</h1>
+      <p class="lead">Sweet spot <span class="kbd">plateforme × genre × localisation × monétisation</span> · Dashboard Looker Studio + code Python/SQL.</p>
+      <div class="btns">
+        <a class="btn primary" href="#dashboard">Voir le dashboard</a>
+        <a class="btn" href="#case">Étude de cas</a>
+        <a class="btn" href="#code">Code & Notebooks</a>
+        <a class="btn" href="https://github.com/Samyomb/piu-piu-game-market-analysis" target="_blank" rel="noopener">GitHub (repo code)</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ÉTUDE DE CAS -->
+  <section id="case">
+    <div class="container">
+      <div class="card">
+        <div>
+          <span class="tag">Étude de cas</span>
+          <span class="tag">Échantillon</span>
+        </div>
+        <h2>Piu Piu — Sweet spot Plateforme × Genre × Localisation</h2>
+        <p class="muted">Sauf la partie “Marché 2024”, tous les chiffres ci-dessous sont <strong>internes à l’échantillon</strong>.</p>
+
+        <h3>Contexte & objectif</h3>
+        <p>Identifier le <strong>sweet spot</strong> (plateforme × genre × localisation × monétisation) pour cadrer la stratégie produit et un argumentaire investisseurs.</p>
+
+        <h3>Marché 2024 (global)</h3>
+        <ul>
+          <li><strong>CA mondial 2024</strong> : <strong>184 Md $</strong></li>
+          <li><strong>Répartition CA par plateforme</strong> : Mobile <strong>51 %</strong> · Console <strong>28,6 %</strong> · PC <strong>20,4 %</strong></li>
+        </ul>
+
+        <h3>Données & périmètres</h3>
+        <ul>
+          <li><strong>Catalogue jeux (1993–2023)</strong> : <strong>97 831</strong> jeux référencés.</li>
+          <li><strong>Analyse “Genres”</strong> : <strong>140 000</strong> joueurs · <strong>68 000</strong> jeux (PlayStation, Steam/PC, Xbox).</li>
+          <li><strong>Localisation / achats</strong> : ≈ <strong>15 667 000</strong> jeux <strong>achetés</strong> (focus : Aventure, RPG, Shooter).</li>
+        </ul>
+
+        <h3>Résultats (échantillon)</h3>
+        <ul>
+          <li><strong>Plateformes</strong> : <strong>PC/Steam</strong> très loin devant en <em>nombre de sorties</em> (1993–2023).</li>
+          <li><strong>Genre le plus référencé</strong> : <strong>Aventure</strong> (PS/Steam/Xbox).</li>
+          <li><strong>Localisation (achats)</strong> : Europe <strong>45,9 %</strong> · Amérique <strong>36,9 %</strong> · Asie <strong>14,2 %</strong>.</li>
+          <li><strong>Modes (Top 30 PS+Steam)</strong> : Multijoueur <strong>57,1 %</strong> · Solo <strong>42,9 %</strong>.</li>
+          <li><strong>Répartition du CA par mode</strong> : Multijoueur <strong>67,2 %</strong> · Solo <strong>32,8 %</strong>.</li>
+          <li><strong>Prix moyen par plateforme</strong> : PlayStation <strong>~65 €</strong> · Steam <strong>~40 €</strong> (≈ <strong>+62,5 %</strong> vs Steam).</li>
+          <li><strong>Prix moyen par genre</strong> : RPG <strong>69,99 €</strong> · Aventure <strong>63 €</strong> · Shooter <strong>53 €</strong>.</li>
+          <li><strong>Langues</strong> : 6 — allemand, russe, espagnol, français, anglais, portugais.</li>
+          <li><strong>Prix cible Piu Piu</strong> : <strong>64,99 €</strong> · <strong>Plateformes</strong> : <strong>Steam</strong> (lancement) + <strong>portage PlayStation</strong>.</li>
+        </ul>
+
+        <h3>Contenu & rating (profil maturité)</h3>
+        <p class="muted">Indices de contenu (proportions) pour anticiper PEGI/ESRB et le ciblage marketing :</p>
+        <ul>
+          <li>Sang <strong>0,28</strong> · Violence <strong>0,27</strong></li>
+          <li>Alcool ~<strong>0,05</strong> · Sexe ~<strong>0,05</strong> · Drogue ~<strong>0,05</strong> · Humour ~<strong>0,05</strong></li>
+        </ul>
+
+        <h3>Décisions (sweet spot)</h3>
+        <ul>
+          <li><strong>Genres cibles</strong> : Aventure · RPG · Shooter.</li>
+          <li><strong>Plateformes</strong> : <strong>Steam</strong> (accès/itération) + <strong>portage PlayStation</strong> (base premium).</li>
+          <li><strong>Mode</strong> : prioriser le <strong>Multijoueur</strong> (dominant en titres et en CA).</li>
+          <li><strong>Zones commerciales</strong> : Europe (UK, DE, RU, ES, FR) & Amérique (US, CA, BR, AR).</li>
+        </ul>
+
+        <p class="muted">Note : les métriques détaillées (prix par région, paniers moyens, CA moyen par jeu) sont visibles dans le dashboard (2003–2024).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CODE & NOTEBOOKS -->
+  <section id="code">
+    <div class="container">
+      <h2>Code & Notebooks</h2>
+      <div class="card">
+        <ul>
+          <!-- Adapte les liens si tes noms diffèrent -->
+          <li>Notebook — Exploration Overview :
+            <a href="https://github.com/Samyomb/piu-piu-game-market-analysis/blob/main/notebooks/exploration_overview.ipynb" target="_blank" rel="noopener">GitHub</a> ·
+            <a href="https://colab.research.google.com/github/Samyomb/piu-piu-game-market-analysis/blob/main/notebooks/exploration_overview.ipynb" target="_blank" rel="noopener">Ouvrir dans Colab</a>
+          </li>
+          <li>Notebook — Cleaning :
+            <a href="https://github.com/Samyomb/piu-piu-game-market-analysis/blob/main/notebooks/cleaning.ipynb" target="_blank" rel="noopener">GitHub</a> ·
+            <a href="https://colab.research.google.com/github/Samyomb/piu-piu-game-market-analysis/blob/main/notebooks/cleaning.ipynb" target="_blank" rel="noopener">Ouvrir dans Colab</a>
+          </li>
+          <li>SQL — normalization_genre.sql :
+            <a href="https://github.com/Samyomb/piu-piu-game-market-analysis/blob/main/sql/normalization_genre.sql" target="_blank" rel="noopener">voir</a>
+          </li>
+          <li>SQL — aggregations.sql :
+            <a href="https://github.com/Samyomb/piu-piu-game-market-analysis/blob/main/sql/aggregations.sql" target="_blank" rel="noopener">voir</a>
+          </li>
+          <li>SQL — union_all.sql :
+            <a href="https://github.com/Samyomb/piu-piu-game-market-analysis/blob/main/sql/union_all.sql" target="_blank" rel="noopener">voir</a>
+          </li>
+          <li>Repo complet (Python & SQL) :
+            <a href="https://github.com/Samyomb/piu-piu-game-market-analysis" target="_blank" rel="noopener">piu-piu-game-market-analysis</a>
+          </li>
+        </ul>
+        <p class="muted">Astuce : si tes fichiers ont d’autres noms, clique-les sur GitHub → copie l’URL “blob/main/…” et remplace les liens ci-dessus.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DASHBOARD -->
+  <section id="dashboard">
+    <div class="container">
+      <h2>Dashboard (Looker Studio)</h2>
+      <p class="muted">Si l’iframe ne s’affiche pas, vérifie le partage du rapport et l’URL <code>/embed/</code>.</p>
+      <div class="iframe-wrap">
+        <iframe
+          title="Looker Studio — Piu Piu"
+          src="https://lookerstudio.google.com/embed/reporting/64f4f0d0-0df3-46b7-8be9-b57a98db3213/page/p_x405yj6vvd"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOURCES -->
+  <section id="sources">
+    <div class="container">
+      <h2>Sources & licences</h2>
+      <div class="card">
+        <ul>
+          <li>Gaming profiles (multi-plateformes) — Kaggle :
+            <a href="https://www.kaggle.com/datasets/artyomkruglov/gaming-profiles-2025-steam-playstation-xbox" target="_blank" rel="noopener">lien</a>
+          </li>
+          <li>Best-selling game consoles (all-time) — Kaggle :
+            <a href="https://www.kaggle.com/datasets/tayyarhussain/best-selling-game-consoles-of-all-time" target="_blank" rel="noopener">lien</a>
+          </li>
+          <li>Game metrics (divers) — Zenodo :
+            <a href="https://zenodo.org/records/10797761" target="_blank" rel="noopener">lien</a>
+          </li>
+        </ul>
+        <p class="muted">Je ne redistribue pas les fichiers sources dans ce dépôt. Téléchargement depuis les liens officiels. Date d’accès : 2025.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      © 2025 · Samyomb · Paris, France
+    </div>
+  </footer>
+</body>
+</html>
