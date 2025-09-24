@@ -1,9 +1,9 @@
-# Piu Piu — Analyse de marché du jeu vidéo
+# Projet PIU PIU — Analyse de marché du jeu vidéo
 **🎯 Ouvrir le dashboard :** [https://lookerstudio.google.com/embed/reporting/64f4f0d0-0df3-46b7-8be9-b57a98db3213/page/p_x405yj6vvd ](https://lookerstudio.google.com/embed/reporting/64f4f0d0-0df3-46b7-8be9-b57a98db3213/page/p_6vqzv75vvd)
 
 **🌐 Portfolio :** https://samyomb.github.io
 
-**Objectif business :** Identifier le **sweet spot** (plateforme × genre × localisation × monétisation) pour cibler la stratégie produit et construire un **argumentaire investisseurs** pour le developpement d'un jeu à fort potentiel.
+**Objectif business :** Identifier le **sweet spot** (plateforme × genre × localisation × politique prix) pour cibler la stratégie produit et construire un **argumentaire investisseurs** pour le developpement d'un jeu vidéo à fort potentiel.
 
 
 ## 🔭 Marché 2024 (vue globale)
