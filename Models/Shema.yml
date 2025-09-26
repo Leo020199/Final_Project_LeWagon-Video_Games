@@ -1,19 +1,35 @@
 version: 2
 
 sources:
-  - name: alz
-    description: data project Alzheimer
+  - name : dataset_additionnal
     tables:
-      - name: raw_disease
-        identifier: disease
-        description: individual vision 2000
-      - name: raw_oasis
-        identifier: oasis
-        description: zoom medical
-      - name: raw_prediction
-        identifier: prediction
-      - name: raw_depense
-        identifier: depense
-        description: données Ameli Pathologies dépenses remboursée
-      - name: raw_ameli_patients
-        identifier: ameli_patients
+    - name : best_sales_consoles
+    - name : content_binary
+    - name : genre_list_games
+    - name : list_nintendo_games
+    - name : list_playstation_games
+    - name : list_steam_games
+    - name : list_xbox_games
+    - name : prices_playstation_500
+    - name : prices_steam_500
+    - name : prices_xbox_500
+
+  - name : playstation
+    tables:
+    - name : playstation_games
+    - name : playstation_players
+    - name : playstation_purchased
+
+
+  - name : steam
+    tables:
+    - name : steam_games
+    - name : steam_players
+    - name : steam_purchased
+
+
+  - name : xbox
+    tables:
+    - name : xbox_games
+    - name : xbox_players
+    - name : xbox_purchased
