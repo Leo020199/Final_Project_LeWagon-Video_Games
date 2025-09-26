@@ -1,0 +1,2 @@
+SELECT *
+FROM projetfinalvideogames.dataset_additionnal.prices_steam_500
