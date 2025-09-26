@@ -1,2 +1,0 @@
-SELECT *
-FROM projetfinalvideogames.dataset_additionnal.list_xbox_games
