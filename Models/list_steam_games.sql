@@ -1,0 +1,2 @@
+SELECT *
+FROM projetfinalvideogames.dataset_additionnal.list_steam_games
