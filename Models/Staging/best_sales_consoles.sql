@@ -1,0 +1,2 @@
+SELECT *
+FROM projetfinalvideogames.dataset_additionnal.best_sales_consoles
