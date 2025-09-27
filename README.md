@@ -4,34 +4,50 @@
 
 **Objectif business :** Identifier le **sweet spot** (plateforme × genre × localisation × politique prix) pour cibler la stratégie produit et construire un **argumentaire investisseurs** pour le developpement d'un jeu vidéo à fort potentiel.
 
+---
 
-## 🔭 Marché 2024 (vue globale)
-- **CA mondial 2024** : **184 Md $**
-- **Répartition du CA par plateforme** : **Mobile 51 %**, **Console 28,6 %**, **PC 20,4 %**
+## 📚 Sources de données
 
+- **Gaming profiles (Playstation, Xbox, Steam)** — Kaggle  
+  https://www.kaggle.com/datasets/artyomkruglov/gaming-profiles-2025-steam-playstation-xbox  
+  - Dataset de **140 000 joueurs**
+  - **68 000 jeux** référencés
+  - Données de **2003-2025** 
 
-## 🧾 Données & périmètres (échantillons)
-- **Catalogue jeux (1993–2023)** : **97 831 jeux** référencés.
-- **Analyse “Genres”** : **140 000 joueurs**, **68 000 jeux** (plateformes : **PlayStation**, **Steam/PC**, **Xbox**).
-- **Localisation / achats** : ~**15 667 000** jeux **achetés** (sélection centrée sur 3 genres : **Aventure**, **RPG**, **Shooter**).
-- **Temporalité Pricing** : **2003–2024**.
-- **Normalisation genres** : mapping sur **10 genres**.
+- **Released games per plateform (1993-2024)** — Zenodo  
+  https://zenodo.org/records/10797761
+
+- **Best-selling game consoles (all-time)** — Kaggle  
+  https://www.kaggle.com/datasets/tayyarhussain/best-selling-game-consoles-of-all-time
+
+- **Best 500 video games launch prices** — IA generated
+
+---
+
+## 🔭 Introduction sur le monde du jeu vidéo (vue globale)
+- **CA mondial 2024** : 184 Md $.
+- **Répartition du CA par plateforme** : Mobile 51 %, Console 28,6 %, PC 20,4 %.
+- **Catalogue jeux (1993–2023)** : ~100 000 jeux référencés.
 
 
 ## 🎮 Plateformes & volumes (1993–2023)
-- **Nombre de jeux sortis par plateforme** : **PC/Steam** largement **devant** en volume (écosystème ouvert, long tail plus dense).
-- **Jeux mobiles (casual) — téléchargements emblématiques** : **Roblox 2 Md**, **Pokémon GO 1 Md**, **Subway Surfers 1 Md**.
-- **Nintendo** : les **casual games Nintendo** sont **exclusivement développés par Nintendo** (first-party).
-- **Consoles — jalons (ventes cumulées, millions)** :  
-  1994 **PlayStation (PS1) 102 M** · 2000 **PS2 155 M** · 2004 **Nintendo DS 154 M** ·  
-  2005–2006 **guerre des consoles** · 2013 **PS4 117 M** · 2017 **Switch 127 M** · 2020 **PS5 20 M**.
+- **Nombre de jeux sortis par plateforme** : PC/Steam volume plus important (écosystème ouvert, long tail plus dense).
+- **Jeux mobiles** : cible très variée et volume de téléchargements beaucoup plus important (milliards de téléchargements).
+- **Jeux Nintendo** : majoritairement développés par Nintendo et licences propres au constructeur.
+- **Guerres des consoles** : chute de ventes de Xbox, remontée en force de Nintendo
 
 ![Dashboard – Overview](lookerstudio/screenshot-overview.png)
 
-## 🏷️ Genres (analyse échantillon)
-- **Genre le plus référencé** : **Aventure** (sur PlayStation, Steam/PC, Xbox).
-- **Moyennes de joueurs par genre** : calculées **sur l’ensemble** des jeux et **sur un top 1000** par genre (métriques visibles dans le dashboard).
-- **Genres retenus** : **Aventure**, **RPG**, **Shooter**.
+---
+
+## 🧾 Données & périmètres (échantillons)
+
+- **Localisation / achats** : ~**15 667 000** jeux **achetés** (sélection centrée sur 3 genres : **Aventure**, **RPG**, **Shooter**).
+
+## 🏷️ Recommandation sur le genre
+- Comparaison du **nombre de jeux référencés par genre** VS **nombre de joueurs moyen d'un jeu par genre** pour déterminer le genre de jeu à recommander
+- **Genres Shooter, Combat, Racing, Sports** : monopole de grands développeurs
+- **Nos recommandation de genres** : Aventure, RPG, Shooter (genres moins 
 
 
 ## 🌍 Localisation (échantillon achats ≈ 15 667 000)
@@ -85,21 +101,5 @@ Ces valeurs servent à **anticiper la classification** (PEGI/ESRB) et la **cible
 - Volumes **sorties par plateforme** & **par genre** (1993–2023).  
 - Indicateurs **localisation** (répartition région/pays).
 
-
-## 🔗 Liens
-- **Dashboard (Looker Studio)** : https://lookerstudio.google.com/embed/reporting/64f4f0d0-0df3-46b7-8be9-b57a98db3213/page/p_x405yj6vvd
-- **Portfolio** : https://samyomb.github.io
-
-
-## 📚 Sources & licences
-
-- **Gaming profiles (multi-plateformes)** — Kaggle  
-  https://www.kaggle.com/datasets/artyomkruglov/gaming-profiles-2025-steam-playstation-xbox  
-
-- **Best-selling game consoles (all-time)** — Kaggle  
-  https://www.kaggle.com/datasets/tayyarhussain/best-selling-game-consoles-of-all-time  
-
-- **Game metrics (divers)** — Zenodo  
-  https://zenodo.org/records/10797761  
 
 ## 🗂️ Structure du repo (suggestion)
